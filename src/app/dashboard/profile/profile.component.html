@@ -1,0 +1,15 @@
+<div id="container">
+
+  <div id="img-container">
+    <img src="{{ (user | async)?.avatar?.url }}" alt="god-madara-uchiha" width="170" height="170">
+  </div>
+
+  <mat-card>
+    <mat-card-content>
+      <p id="display">{{ (user | async)?.display }}</p>
+      <p id="email">{{ (user | async)?.email }}</p>
+      <p id="timestamp">Joined {{ (user | async)?.timestamp | timestamp }}</p>
+    </mat-card-content>
+  </mat-card>
+
+</div>

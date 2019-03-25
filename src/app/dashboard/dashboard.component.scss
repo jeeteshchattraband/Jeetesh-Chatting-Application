@@ -1,0 +1,37 @@
+.mat-drawer {
+  width: 70vw;
+}
+
+#drawer-content {
+  height: 100vh;
+
+  .mat-toolbar {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+
+    span {
+      display: flex;
+      button {
+        // comment this onupload to mobile
+        // margin-top: 8px;
+      }
+    }
+
+    #menu {
+      margin-right: 5px;
+    }
+
+    .add {
+      margin-left: auto;
+    }
+
+    #settings {
+      margin-left: 1vw;
+    }
+  }
+
+  #content-container {
+    // padding-top: 11vh;
+  }
+}
